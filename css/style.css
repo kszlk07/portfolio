@@ -1,0 +1,66 @@
+body {
+  background-color: #587DAD;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 3vh;
+  color: #587DAD;
+}
+
+h1{
+  color: #BEDCFA;
+  font-family: 'Lato';
+  font-weight: 700;
+}
+
+h3{
+  color: #A2FAC4;
+}
+
+/* sections */
+.darkBlueSection{
+  background-color: #587DAD;
+}
+
+/* containers */
+.container{
+  padding-top: 10vh;
+  padding-bottom: 18vh;
+}
+
+/* Mediaquery - zmniejsz padding-top */
+
+/* navbar */
+
+
+
+.nav-item:not(:last-child) .nav-link {
+  border-right: 2px solid #BEDCFA;
+}
+
+/* Mediaquery - usun border na tabletach/telefonach */
+
+.nav-link{
+  color: #BEDCFA;
+}
+
+.navbar-brand{
+  color: #BEDCFA;
+  font-family: 'Lato';
+  font-weight: 900;
+  font-size: 7vh;
+  letter-spacing: .3rem;
+}
+
+/* title section */
+#titleSection{
+  background-image:url('../images/MintMap.png');
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+}
+
+.titleContainer{
+  padding-bottom: 50vh;
+}
+
+/* Mediaquery - zmniejsz padding-bottom na tabletach/telefonach */
