@@ -1,13 +1,23 @@
-body {
-  background-color: #587DAD;
-  text-align: center;
-  font-family: 'Roboto';
-  font-size: 3vh;
-  color: #587DAD;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+  color: inherit;
 }
 
-h1{
-  color: #BEDCFA;
+body {
+  text-align: left;
+  font-family: 'Roboto';
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+h1,h2{
   font-family: 'Lato';
   font-weight: 700;
 }
@@ -19,20 +29,43 @@ h3{
 /* sections */
 .darkBlueSection{
   background-color: #587DAD;
+  color: #BEDCFA;
+}
+
+.darkBlueSection h1{
+  color: #BEDCFA;
+}
+
+.lightBlueSection{
+  background-color: #BEDCFA;
+  color: #587DAD;
+}
+
+.lightBlueSection h1{
+  color: #587DAD;
+  margin-bottom: 1rem;
+}
+
+.lightBlueSection .container{
+  margin: auto 6%;
 }
 
 /* containers */
 .container{
-  padding-top: 10vh;
-  padding-bottom: 18vh;
+  padding: 10vh 0.5rem 18vh 0.5rem;
+}
+
+.container-fluid{
+  padding-top: 5vh;
+}
+
+.col{
+  margin: 4rem auto;
 }
 
 /* Mediaquery - zmniejsz padding-top */
 
 /* navbar */
-
-
-
 .nav-item:not(:last-child) .nav-link {
   border-right: 2px solid #BEDCFA;
 }
@@ -57,6 +90,7 @@ h3{
   background-repeat:no-repeat;
   background-size:contain;
   background-position:center;
+  text-align: center;
 }
 
 .titleContainer{
@@ -64,3 +98,111 @@ h3{
 }
 
 /* Mediaquery - zmniejsz padding-bottom na tabletach/telefonach */
+
+/* about section */
+#aboutSection{
+  background-image:url('../images/Squares.png');
+  background-repeat:no-repeat;
+  background-size:auto;
+  background-position: 0 5rem;
+}
+
+/* Mediaquery  tło musi być na dole sekcji razem ze zdjęciem*/
+
+.aboutHeader{
+  padding-bottom: 0;
+}
+
+
+.clearContainer{
+  clear:both;
+  padding: 0;
+  margin: 0;
+  height: 1px;
+}
+
+/* mediaquery - wywal floaty i clearContainer ma miec padding-bottom: 0 */
+
+.profImg{
+  position: relative;
+  height: 28vw;
+  transform:rotateY(180deg);
+}
+/* mediaquery - powiększ obrazek */
+/* znasz wymiary i paddingu i marginesów dopasuj tło obrazka do obrazka */
+
+/* my work section */
+.workContainer{
+  text-align: center;
+}
+
+.wwwCol{
+  background-image:url('../images/www.png');
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectImg{
+  height: 30.5vh;
+  border-radius:100%;
+  transition: 0.5s;
+}
+
+.projectImg:hover{
+  height: 33vh;
+}
+
+.workHref{
+  border-radius: 100%;
+}
+
+.seeMore{
+  display: inline;
+  transition: 0.5s;
+}
+
+.seeMore:hover{
+  color: #47AD6F
+}
+
+/* contact me section */
+
+.dontWaitButton{
+  width: 22rem;
+  height: 22rem;
+  margin-top: calc(11rem * 1.4142135623730950 - 11rem);
+  background-color: #587DAD;
+  transform: rotate(45deg);
+  transition:1s;
+}
+
+.dontWaitButton h1{
+  color: #BEDCFA;
+  font-size: 5rem;
+  transform: rotate(-45deg);
+}
+
+.dontWaitButton:hover {
+  background-color: #71a2df;
+  width: 24rem;
+  height: 24rem;
+}
+
+.dontWaitButton:hover h1{
+  color: #cbe8fb;
+}
+
+/* footer section */
+
+.footerContainer{
+  color: #A2FAC4;
+}
+
+.footerH3{
+  font-weight: 700;
+}
