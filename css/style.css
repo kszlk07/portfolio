@@ -55,22 +55,14 @@ h3{
   padding: 10vh 0.5rem 18vh 0.5rem;
 }
 
-.container-fluid{
-  padding-top: 5vh;
-}
-
 .col{
   margin: 4rem auto;
 }
-
-/* Mediaquery - zmniejsz padding-top */
 
 /* navbar */
 .nav-item:not(:last-child) .nav-link {
   border-right: 2px solid #BEDCFA;
 }
-
-/* Mediaquery - usun border na tabletach/telefonach */
 
 .nav-link{
   color: #BEDCFA;
@@ -97,39 +89,24 @@ h3{
   padding-bottom: 50vh;
 }
 
-/* Mediaquery - zmniejsz padding-bottom na tabletach/telefonach */
-
 /* about section */
 #aboutSection{
   background-image:url('../images/Squares.png');
   background-repeat:no-repeat;
   background-size:auto;
-  background-position: 0 5rem;
+  background-position: 5rem 5rem;
 }
-
-/* Mediaquery  tło musi być na dole sekcji razem ze zdjęciem*/
 
 .aboutHeader{
   padding-bottom: 0;
 }
 
 
-.clearContainer{
-  clear:both;
-  padding: 0;
-  margin: 0;
-  height: 1px;
-}
-
-/* mediaquery - wywal floaty i clearContainer ma miec padding-bottom: 0 */
-
 .profImg{
   position: relative;
   height: 28vw;
   transform:rotateY(180deg);
 }
-/* mediaquery - powiększ obrazek */
-/* znasz wymiary i paddingu i marginesów dopasuj tło obrazka do obrazka */
 
 /* my work section */
 .workContainer{
@@ -167,7 +144,7 @@ h3{
 }
 
 .seeMore:hover{
-  color: #47AD6F
+  color: #47AD6F;
 }
 
 /* contact me section */
@@ -200,9 +177,87 @@ h3{
 /* footer section */
 
 .footerContainer{
+  padding-top: 3rem;
   color: #A2FAC4;
+}
+
+.footerCol{
+  border-left: 2px solid #A2FAC4;
 }
 
 .footerH3{
   font-weight: 700;
+}
+
+.footerLink{
+  transition: 0.5s;
+}
+
+.footerLink:hover{
+  color: #47AD6F;
+}
+
+/* mediaquery */
+
+@media (min-width:992px){
+  .footerContainer p{
+    font-size: 1.7vw;
+  }
+}
+
+@media (max-width: 992px){
+  .container{
+    padding: 5vh 0.5rem 25vh 0.5rem;
+  }
+
+  .nav-item:not(:last-child) .nav-link {
+    border: 0;
+  }
+
+  body {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .titleContainer{
+    padding-bottom: 50vh;
+  }
+
+  #aboutSection{
+    background-position: -30rem 25rem;
+  }
+
+  .profImg{
+    height: 55vw;
+  }
+}
+
+@media(max-width:576px){
+  #aboutSection{
+    background-position: -40rem 35rem;
+  }
+
+  .profImg{
+    height: 75vw;
+  }
+  .dontWaitButton{
+    width: 16rem;
+    height: 16rem;
+    margin-top: calc(8rem * 1.4142135623730950 - 8rem);
+    background-color: #587DAD;
+    transform: rotate(45deg);
+    transition:1s;
+  }
+
+  .dontWaitButton h1{
+    color: #BEDCFA;
+    font-size: 4rem;
+    transform: rotate(-45deg);
+  }
+
+  .dontWaitButton:hover {
+    background-color: #71a2df;
+    width: 17rem;
+    height: 17rem;
+  }
 }
