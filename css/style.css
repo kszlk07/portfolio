@@ -1,3 +1,4 @@
+/* ****************Main CSS********************* */
 a {
     text-decoration: none;
     color: inherit;
@@ -15,6 +16,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  background-color: #BEDCFA;
 }
 
 h1,h2{
@@ -46,6 +48,19 @@ h3{
   margin-bottom: 1rem;
 }
 
+.lightBlueSection h3{
+  font-weight: 700;
+  color:#587DAD;
+}
+
+.lightBlueSection a{
+  transition: 0.5s;
+}
+
+.lightBlueSection a:hover{
+  color: #71a2df;
+}
+
 .lightBlueSection .container{
   margin: auto 6%;
 }
@@ -75,6 +90,8 @@ h3{
   font-size: 7vh;
   letter-spacing: .3rem;
 }
+
+/* ********************CSS for index.html******************** */
 
 /* title section */
 #titleSection{
@@ -109,7 +126,7 @@ h3{
 }
 
 /* my work section */
-.workContainer{
+.workContainer, .mainWorkContainer{
   text-align: center;
 }
 
@@ -260,4 +277,49 @@ h3{
     width: 17rem;
     height: 17rem;
   }
+}
+
+/* *************CSS for Contact.html****************** */
+#mainContactSection{
+  background-image:url('../images/Squares.png');
+}
+
+/* mediaquery */
+
+@media(max-width:576px){
+  #mainContactSection{
+    background-repeat:no-repeat;
+    background-size:auto;
+    background-position: -30rem 5rem;
+  }
+}
+/* *****************CSS for work.html************ */
+
+.mainWorkContainer .wwwCol{
+  background-image:url('../images/dark_www.png');
+}
+
+/* *********************CSS for about.html*********** */
+#mainAboutSection{
+  text-align: left;
+}
+.aboutButton{
+  transition: 0.5s;
+}
+
+.aboutButton:hover{
+  color: #71a2df;
+}
+
+.aboutButton2{
+  float:right;
+}
+
+.aboutProfImg{
+  height: 30vh;
+  margin: 10vh auto;
+}
+
+.shortHr{
+  width: 10vw;
 }
