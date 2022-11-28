@@ -253,6 +253,10 @@ h3{
   #aboutSection{
     background-position: -40rem 35rem;
   }
+  body {
+    text-align: center;
+    font-size: 1.2rem;
+  }
 
   .profImg{
     height: 75vw;
