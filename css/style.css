@@ -62,7 +62,7 @@ h3{
 }
 
 .lightBlueSection .container{
-  margin: auto 6%;
+  padding: auto 6% auto 6%;
 }
 
 /* containers */
@@ -121,7 +121,7 @@ h3{
 
 .profImg{
   position: relative;
-  height: 28vw;
+  height: 30rem;
   transform:rotateY(180deg);
 }
 
@@ -195,6 +195,7 @@ h3{
 
 .footerContainer{
   padding-top: 3rem;
+  word-wrap: break-word;
   color: #A2FAC4;
 }
 
@@ -218,7 +219,7 @@ h3{
 
 @media (min-width:992px){
   .footerContainer p{
-    font-size: 1.7vw;
+    font-size: 1.5rem;
   }
 }
 
@@ -245,7 +246,7 @@ h3{
   }
 
   .profImg{
-    height: 55vw;
+    height: 30rem;
   }
 }
 
@@ -259,7 +260,7 @@ h3{
   }
 
   .profImg{
-    height: 75vw;
+    height: 18rem;
   }
   .dontWaitButton{
     width: 16rem;
@@ -284,6 +285,7 @@ h3{
 
   .email{
     font-size: 1rem;
+    word-wrap: break-word;
   }
 }
 
@@ -329,5 +331,5 @@ h3{
 }
 
 .shortHr{
-  width: 10vw;
+  width: 20%;
 }
