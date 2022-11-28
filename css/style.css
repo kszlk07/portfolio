@@ -281,6 +281,10 @@ h3{
     width: 17rem;
     height: 17rem;
   }
+
+  .email{
+    font-size: 1rem;
+  }
 }
 
 /* *************CSS for Contact.html****************** */
