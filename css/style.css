@@ -188,7 +188,7 @@ h3{
   width: 22rem;
   height: 22rem;
   margin-top: calc(11rem * 1.4142135623730950 - 11rem);
-  background-color: #587DAD;
+  background-color: #47AD6F;
   transform: rotate(45deg);
   transition:1s;
 }
@@ -200,7 +200,7 @@ h3{
 }
 
 .dontWaitButton:hover {
-  background-color: #71a2df;
+  background-color: #409c64;
   width: 24rem;
   height: 24rem;
 }
@@ -235,13 +235,13 @@ h3{
 
 /* mediaquery */
 
-@media (min-width:992px){
+@media (min-width:991px){
   .footerContainer p{
     font-size: 1.5rem;
   }
 }
 
-@media (max-width: 992px){
+@media (max-width: 991px){
   .container{
     padding: 5vh 0.5rem 25vh 0.5rem;
   }
@@ -268,7 +268,7 @@ h3{
   }
 }
 
-@media(max-width:576px){
+@media(max-width:575px){
   #aboutSection{
     background-position: -40rem 35rem;
   }
@@ -280,6 +280,10 @@ h3{
     font-size: 3rem;
   }
 
+  .titleContainer{
+    padding-bottom: 30vh;
+  }
+
   .profImg{
     height: 18rem;
   }
@@ -287,15 +291,10 @@ h3{
     width: 16rem;
     height: 16rem;
     margin-top: calc(8rem * 1.4142135623730950 - 8rem);
-    background-color: #587DAD;
-    transform: rotate(45deg);
-    transition:1s;
   }
 
   .dontWaitButton h1{
-    color: #BEDCFA;
     font-size: 4rem;
-    transform: rotate(-45deg);
   }
 
   .dontWaitButton:hover {
@@ -317,7 +316,7 @@ h3{
 
 /* mediaquery */
 
-@media(max-width:576px){
+@media(max-width:575px){
   #mainContactSection{
     background-repeat:no-repeat;
     background-size:auto;
@@ -335,11 +334,23 @@ h3{
   text-align: left;
 }
 .aboutButton{
-  transition: 0.5s;
+  border: 0;
+  background-color: #47AD6F;
+  transition: 1s;
+  width: 22.5rem;
+}
+
+.aboutButton h1{
+    color: #BEDCFA;
+    transition: 1s;
 }
 
 .aboutButton:hover{
-  color: #71a2df;
+  background-color: #409c64;
+}
+
+.aboutButton:hover h1{
+  color: #cbe8fb;
 }
 
 .aboutButton2{
@@ -351,6 +362,38 @@ h3{
   margin: 10vh auto;
 }
 
+.aboutProfImg-general{
+  float: right;
+  transform:rotateY(180deg);
+}
+
 .shortHr{
   width: 20%;
+}
+
+@media(max-width: 991px){
+  .aboutProfImg{
+    height: 20vh;
+    margin: 10vh auto;
+  }
+  .aboutButton{
+    width: 15rem;
+  }
+  .aboutButton h1{
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 575px){
+  .aboutProfImg{
+    height: 15vh;
+    margin: 10vh auto;
+  }
+  .aboutButton{
+    padding: 0;
+    width: 40vw;
+  }
+  .aboutButton h1{
+    font-size:
+  }
 }
