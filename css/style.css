@@ -9,7 +9,7 @@ a:hover{
 
 body {
   text-align: left;
-  font-family: 'Roboto';
+  font-family: 'Roboto',sans-serif;
   font-size: 2rem;
   width: 100%;
   height: 100%;
@@ -19,9 +19,14 @@ body {
   background-color: #BEDCFA;
 }
 
+h1{
+  font-size: 3.7rem;
+}
+
 h1,h2{
-  font-family: 'Lato';
-  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.18rem;
 }
 
 h3{
@@ -75,6 +80,10 @@ h3{
 }
 
 /* navbar */
+.nav-item{
+  font-size: 1.8rem;
+}
+
 .nav-item:not(:last-child) .nav-link {
   border-right: 2px solid #BEDCFA;
 }
@@ -84,26 +93,35 @@ h3{
 }
 
 .navbar-brand{
-  color: #BEDCFA;
-  font-family: 'Lato';
+  color: #A2FAC4;
+  font-family: 'Lato', sans-serif;
   font-weight: 900;
   font-size: 7vh;
   letter-spacing: .3rem;
+  transition: 0.5s;
+}
+
+.navbar-brand:hover{
+  color: #47AD6F;
+}
+
+.dropdown-menu{
+  background-color: #BEDCFA;
 }
 
 /* ********************CSS for index.html******************** */
 
 /* title section */
 #titleSection{
-  background-image:url('../images/MintMap.png');
+  background-image:url('../images/mint_map.png');
   background-repeat:no-repeat;
   background-size:contain;
-  background-position:center;
+  background-position: 50% 90%;
   text-align: center;
 }
 
 .titleContainer{
-  padding-bottom: 50vh;
+  padding-bottom: 40rem;
 }
 
 /* about section */
@@ -257,6 +275,9 @@ h3{
   body {
     text-align: center;
     font-size: 1.2rem;
+  }
+  h1{
+    font-size: 3rem;
   }
 
   .profImg{
