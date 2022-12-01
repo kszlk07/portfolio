@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Krzysztof Juraszek</title>
+  <!-- Icon -->
+  <link rel="icon" href="../KJ.png">
+  <!-- styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <!-- FontAwesome script -->
+  <script src="https://kit.fontawesome.com/ae2a15dbf4.js" crossorigin="anonymous"></script>
+  <!-- navbar section -->
+  <section class="darkBlueSection" id="navbarSection">
+    <nav class="navbar navbar-expand-lg navbar-dark lined shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">KJ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link px-lg-5 py-0" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-5 py-0" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-5 py-0" href="../work/index.html">My work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-5 py-0" href="../contact/index.html">Contact</a>
+            </li>
+            <li class="nav-item px-lg-4 py-0">
+              <div class="dropstart">
+                <i class="fa-solid fa-earth-europe" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="../pl/omnie/index.html">Polish</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- main section -->
+  <section id="mainAboutSection" class="lightBlueSection">
+    <div class="container mx-auto mainAboutContainer">
+      <div class="aboutButtonsContainer">
+        <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="0" class="aboutButton aboutButton1" aria-current="true" aria-label="Slide 1"> <h1 class="my-2">Resume</h1></button>
+        <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="1" class="aboutButton aboutButton2 testBtn2" aria-label="Slide 2"><h1 class="my-2">General</h1></button>
+      </div>
+      <div class="aboutProfImgContainer">
+        <img src="../images/prof_img.png" alt="" class="aboutProfImg">
+        <img src="../images/general_prof_img.png" alt="" class="aboutProfImg aboutProfImg-general">
+      </div>
+      <div id="aboutCarousel" class="carousel slide" data-bs-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="mx-auto">
+              <h1>Krzysztof Juraszek</h1>
+              <p>Electronics Student of Wrocław University of Science and
+                Technology at Faculty of Electronics, Photonics and Microsystems</p>
+              <hr>
+              <h1>Work Experience</h1>
+              <ul>
+                <li>
+                  <h2>Comtrade (internship), Bielsko-Biała</h2>
+                  <h5>October 2018 - November 2018</h5>
+                  <p>
+                    The Comtrade company deals with commerce of post-lease
+                    equipment, such as computers, laptops, printers etc.
+                    I’ve done my internship via my IT technical school.
+                    My main responsibilities:
+                  <ul>
+                    <li>Simple service work (replacement of individual hardware
+                      in computers, laptops and printers)</li>
+                    <li>Cleaning of computer hardware</li>
+                    <li>Quality control of stock ordered hardware</li>
+                  </ul>
+                  </p>
+                </li>
+              </ul>
+              <hr>
+              <h1>Education</h1>
+              <ul>
+                <li>
+                  <h2>Wrocław University of Science and Technology</h2>
+                  <h5>October 2021 - Present</h5>
+                </li>
+                <hr class="shortHr">
+                <li>
+                  <h2>Information Technology Technician, The Combined Schools of
+                    Commerce and Technology in Bielsko-Biała</h2>
+                  <h5>September 2017 - June 2021</h5>
+                  <p>I learned a lot about repairing and cleaning computer hardware.
+                    Also, I was doing more complex things like programming, creating
+                    and managing databases while studying</p>
+                </li>
+              </ul>
+              <hr>
+              <h1>Skills</h1>
+              <ul>
+                <li>Html - proficient</li>
+                <li>CSS - proficient</li>
+                <li>Bootstrap - proficient</li>
+                <li>Web design - competent</li>
+                <li>Linux - advanced beginner</li>
+                <li>C++ - advanced beginner</li>
+                <li>C# - beginner</li>
+                <hr class="shortHr">
+                <li>Active learning</li>
+                <li>Problem solving</li>
+                <li>Logical thinking</li>
+              </ul>
+              <hr>
+              <h1>Languages</h1>
+              <ul>
+                <li>Polish - native</li>
+                <li>English - B2</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p>In this section I wanted to include some information about who am I and what are my hobbies.<br>
+              <br>
+              <b>So I'm Christopher, I'm from Poland.</b><br>
+              <br>
+              Beside web design I spend my free time on going to the gym, skateboard when it's warm outside.
+              Also I like playing video games - my favorite is 'The Talos Principle'.
+              Of sports, I am most interested in Formula 1.<br>
+              <br>
+              One of the most important things to me is self-development. I constantly want to
+              learn more and more. I want to sharpen skills that I already have, and learn new ones.
+              I started learning Italian this year, and I'm sure when I will
+              be able to get on with others in Italian I will want to learn next language.<br>
+              <br>
+              I think there is no ceiling when it comes to self-development. We can always take
+              a step further.<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer section -->
+  <footer id="footer" class="darkBlueSection">
+    <div class="container-fluid footerContainer">
+      <div class="row row-cols-1 row-cols-lg-3 px-3 footerRow">
+        <div class="col px-5 footerCol">
+          <h2>Contact details</h2>
+          <br>
+          <h3 class="footerH3">E-mail</h3>
+          <a href="mailto:krzysztof.juraszek07@gmail.com" class="footerLink">
+            <p>Krzysztof.juraszek07@gmail.com</p>
+          </a>
+          <br>
+          <h3 class="footerH3">Phone number</h3>
+          <a href="tel:+48531404407" class="footerLink">
+            <p>+48 531 404 407</p>
+          </a>
+        </div>
+        <div class="col px-5 footerCol">
+          <h2>Media</h2>
+          <a href="https://www.facebook.com/krzysztof.juraszek.56/" class="footerLink">
+            <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+          </a>
+          <a href="https://www.linkedin.com/in/krzysztof-juraszek-0ba383242/" class="footerLink">
+            <p><i class="fa-brands fa-linkedin"></i> Linkedin</p>
+          </a>
+        </div>
+        <div class="col px-5 footerCol">
+          <h2>Attributes</h2>
+          <p><a href="https://www.flaticon.com/free-icons/plane" class="footerLink">Icons created by Freepik - Flaticon</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
